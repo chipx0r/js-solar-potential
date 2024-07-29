@@ -206,7 +206,6 @@
   {title}
   subtitle="Values are only placeholders."
   subtitle2="Update with your own values."
-  secondary
 >
   <div class="flex flex-col space-y-4 pt-1">
     <div class="p-4 mb-4 surface-variant outline-text rounded-lg">
