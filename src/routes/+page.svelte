@@ -76,9 +76,6 @@
 
 <!-- Top bar -->
 <div class="flex flex-row h-full">
-  <!-- Main map -->
-  <div bind:this={mapElement} class="w-full" />
-
   <!-- Side bar -->
   <aside class="flex-none md:w-96 w-80 p-2 pt-3 overflow-auto">
     <div class="flex flex-col space-y-2 h-full">
@@ -94,4 +91,7 @@
 
     </div>
   </aside>
+  <!-- Main map -->
+  <div bind:this={mapElement} class="w-full" />
+
 </div>
