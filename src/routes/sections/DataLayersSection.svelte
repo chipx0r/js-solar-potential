@@ -278,7 +278,7 @@
   </Expandable>
 {/if}
 
-<div class="absolute top-0 left-0 w-72">
+<div class="relative top-0 left-0 w-72">
   {#if expandedSection == title && layer}
     <div class="m-2">
       <SummaryCard {icon} {title} rows={[{ name: dataLayerOptions[layerId], value: '' }]}>
@@ -334,7 +334,7 @@
   {/if}
 </div>
 
-<div class="absolute bottom-6 left-0 w-full">
+<div class="relative bottom-6 left-0 w-full">
   <div class="md:mr-96 mr-80 grid place-items-center">
     {#if layer}
       <div
