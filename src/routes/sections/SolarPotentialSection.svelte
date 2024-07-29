@@ -323,18 +323,6 @@
         />
       </div>
     {/if}
-
-    <div class="grid justify-items-end">
-      <md-filled-tonal-button
-        trailing-icon
-        role={undefined}
-        href="https://developers.google.com/maps/documentation/solar/calculate-costs-us"
-        target="_blank"
-      >
-        More details
-        <md-icon slot="icon">open_in_new</md-icon>
-      </md-filled-tonal-button>
-    </div>
   </div>
 </Expandable>
 
