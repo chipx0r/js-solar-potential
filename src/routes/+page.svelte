@@ -27,8 +27,8 @@
 
   const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   const defaultPlace = {
-    name: 'Rinconada Library',
-    address: '1213 Newell Rd, Palo Alto, CA 94303',
+    name: 'Prta del Sol 1',
+    address: 'Prta del Sol 1, Centro, Madrid, Spain',
   };
   let location: google.maps.LatLng | undefined;
   const zoom = 19;
