@@ -162,10 +162,6 @@
     ).toFixed(2)} MWh`}
   >
     <div class="flex flex-col space-y-2 px-2">
-      <span class="outline-text label-medium">
-        <b>{title}</b> provides data on the location, dimensions & solar potential of a building.
-      </span>
-
       <InputPanelsCount
         bind:configId
         solarPanelConfigs={buildingInsights.solarPotential.solarPanelConfigs}
@@ -177,12 +173,6 @@
         suffix="Watts"
       />
       <InputBool bind:value={showPanels} label="Solar panels" />
-
-      <div class="grid justify-items-end">
-        <md-filled-tonal-button role={undefined} on:click={() => apiResponseDialog.show()}>
-          API response
-        </md-filled-tonal-button>
-      </div>
 
       <md-dialog bind:this={apiResponseDialog}>
         <div slot="headline">

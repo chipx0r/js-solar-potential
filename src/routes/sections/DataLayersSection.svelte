@@ -220,11 +220,6 @@
 {:else}
   <Expandable bind:section={expandedSection} {icon} {title} subtitle={dataLayerOptions[layerId]}>
     <div class="flex flex-col space-y-2 px-2">
-      <span class="outline-text label-medium">
-        <b>{title}</b> provides raw and processed imagery and granular details on an area surrounding
-        a location.
-      </span>
-
       <Dropdown
         bind:value={layerId}
         options={dataLayerOptions}
@@ -263,13 +258,6 @@
           <InputBool bind:value={playAnimation} label="Play animation" />
         {/if}
       {/if}
-      <div class="flex flex-row">
-        <div class="grow" />
-        <md-filled-tonal-button role={undefined} on:click={() => apiResponseDialog.show()}>
-          API response
-        </md-filled-tonal-button>
-      </div>
-
       <md-dialog bind:this={apiResponseDialog}>
         <div slot="headline">
           <div class="flex items-center primary-text">
