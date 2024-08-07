@@ -61,6 +61,6 @@
   });
 </script>
 
-<md-filled-text-field bind:this={textFieldElement} label="Search an address" value={initialValue}>
+<md-filled-text-field bind:this={textFieldElement} label="Buscar direccion" value={initialValue}>
   <md-icon slot="leadingicon">search</md-icon>
 </md-filled-text-field>
