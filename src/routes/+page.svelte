@@ -77,7 +77,7 @@
 <!-- Top bar -->
 <div class="flex flex-row h-full">
   <!-- Side bar -->
-  <aside class="flex-none md:w-96 w-80 p-2 pt-3 overflow-auto">
+  <aside class="flex-none md:w-1/3 w-1/3 p-2 pt-3 overflow-auto">
     <div class="flex flex-col space-y-2 h-full" style="background: linear-gradient(180deg, rgba(83,123,213,0.55) 0%, rgba(52,163,206,0.6) 35%, rgba(61,163,197,1) 100%);">
       {#if placesLibrary && map}
         <SearchBar bind:location {placesLibrary} {map} initialValue={defaultPlace.name} />
