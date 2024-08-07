@@ -22,6 +22,7 @@
   import BuildingInsightsSection from './BuildingInsightsSection.svelte';
   import DataLayersSection from './DataLayersSection.svelte';
   import SolarPotentialSection from './SolarPotentialSection.svelte';
+  import { visuallyHidden } from 'svelte-style';
 
   export let location: google.maps.LatLng;
   export let map: google.maps.Map;
@@ -57,7 +58,7 @@
   }
 </script>
 
-<div class="flex flex-col rounded-md shadow-md">
+<div use:visuallyHidden={true} class="flex flex-col rounded-md shadow-md">
   {#if geometryLibrary && map}
     <BuildingInsightsSection
       bind:expandedSection
@@ -82,7 +83,7 @@
       {geometryLibrary}
       {map}
     />
-
+  <!--
     <md-divider inset />
     <SolarPotentialSection
       bind:expandedSection
@@ -94,5 +95,6 @@
       solarPanelConfigs={buildingInsights.solarPotential.solarPanelConfigs}
       defaultPanelCapacityWatts={buildingInsights.solarPotential.panelCapacityWatts}
     />
+  -->
   {/if}
 </div>
