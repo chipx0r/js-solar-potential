@@ -267,4 +267,11 @@
   --md-sys-typescale-title-small-font-size: 14px;
   --md-sys-typescale-title-small-line-height: 20px;
   --md-sys-typescale-title-small-letter-spacing: 0.1px;
+
+  /* input */
+  --md-filled-text-field-container-shape: 0px;
+  --md-sys-typescale-body-large: 400 1rem system-ui;
+  --md-sys-color-surface-container-highest: #799eed;
+  --md-filled-text-field-label-text-color: #424c52;
+  --md-filled-text-field-input-text-color: #ffffff;
 }
